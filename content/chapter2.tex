@@ -1,0 +1,135 @@
+\section{A Dual-Stablecoin Strategy}
+Stabolut employs a dual-stablecoin strategy to cater to the diverse regulatory landscapes and user needs of the global market. This approach allows us to offer a fully compliant, non-yield-bearing stablecoin for the European market, while also providing a decentralized, yield-bearing stablecoin for international users.
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|p{6cm}|p{6cm}|}
+\hline
+\textbf{Feature} & \textbf{ESB (Euro Stablecoin)} & \textbf{USB (USD Stablecoin)} \\
+\hline
+\textbf{Target Market} & European Union & International / DeFi \\
+\hline
+\textbf{Peg} & Euro (EUR) & US Dollar (USD) \\
+\hline
+\textbf{Compliance} & MiCA-compliant ART & Decentralized \\
+\hline
+\textbf{Backing} & MiCA-compliant asset portfolio (including crypto-assets) & Crypto-asset hedging \\
+\hline
+\textbf{Yield} & No (reward-based) & Yes (yield-bearing) \\
+\hline
+\end{tabular}
+\caption{ESB vs. USB: A Comparative Overview}
+\label{tab:esbvsusb}
+\end{table}
+
+\subsection{ESB: The MiCA-Compliant Euro Stablecoin}
+ESB is a fully regulated Asset-Referenced Token (ART) for the European market, pegged to the Euro. It is backed by a diversified and over-collateralized portfolio of MiCA-compliant assets, including approved crypto-assets such as Bitcoin and Ethereum.
+
+\subsubsection{Compliant Crypto-Collateralization}
+To be clear, ESB's reserve includes a carefully managed portfolio of crypto-assets, in full compliance with MiCA's requirements for Asset-Referenced Tokens. This is fundamentally different from the synthetic hedging mechanism used by USB.
+
+The ESB reserve is a diversified portfolio of assets, including:
+\begin{itemize}
+    \item \textbf{High-Quality Liquid Assets}: A significant portion of the reserve is held in cash, bank deposits, and short-term government securities.
+    \item \textbf{Approved Crypto-Assets}: A smaller portion of the reserve is held in a diversified basket of MiCA-compliant crypto-assets. Initially, this will be limited to Bitcoin (BTC) and Ethereum (ETH), selected for their unparalleled liquidity and market depth. The list of approved assets can be expanded by SBL governance, subject to regulatory approval.
+\end{itemize}
+
+The reserve is always over-collateralized to ensure that the value of the assets exceeds the value of the circulating ESB supply, even in the event of significant market volatility. This model provides the stability and security required by MiCA, while still allowing for a degree of exposure to the crypto markets.
+
+\subsubsection{A Multi-Faceted Reward System for ESB}
+ESB is designed to be an attractive and competitive stablecoin within the European market, despite not offering a direct yield. Its value proposition is built on a multi-faceted reward system that is fully compliant with MiCA regulations.
+
+\begin{itemize}
+    \item \textbf{Transactional Cashback}: Users receive a percentage of their transaction value back in ESB for every payment they make. The cashback rate is tiered based on monthly transaction volume, incentivizing high-frequency usage.
+    \item \textbf{SBL Loyalty Program}: Users are rewarded with SBL tokens for their loyalty and engagement with the Stabolut ecosystem. SBL is earned by completing specific actions, such as:
+    \begin{itemize}
+        \item Onboarding new users to the platform.
+        \item Participating in governance votes.
+        \item Reaching specific milestones for the number of transactions.
+    \end{itemize}
+    \item \textbf{Fee Rebates}: High-volume users and merchants are eligible for significant rebates on transaction and service fees. This makes ESB a cost-effective solution for businesses and power users.
+\end{itemize}
+
+This activity-based reward structure ensures that ESB is not just a stable store of value, but also a dynamic and rewarding medium of exchange.
+
+\subsubsection{Ensuring MiCA Compliance for ESB}
+The ESB reward system is meticulously designed to comply with Article 40 of the MiCA regulation, which prohibits the granting of interest on e-money and asset-referenced tokens. The key to our compliance is the distinction between prohibited "interest" and permissible "activity-based rewards."
+
+MiCA's prohibition targets remuneration that is linked to the duration of time a token is held. Our reward system, in contrast, is exclusively tied to user activity and engagement. As outlined in the provided regulatory analysis, this approach is fully compliant with MiCA's requirements.
+
+The following table summarizes how our reward mechanisms align with MiCA's guidelines:
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|p{6cm}|p{6cm}|}
+\hline
+\textbf{Reward Mechanism} & \textbf{How it Works} & \textbf{MiCA Compliance} \\
+\hline
+\textbf{Transactional Cashback} & Rewards are based on the volume and frequency of transactions. & Compliant, as the reward is triggered by payment activity, not passive holding. \\
+\hline
+\textbf{SBL Loyalty Program} & SBL tokens are earned by completing specific actions, such as referring new users or participating in governance. & Compliant, as the reward is based on user engagement and contribution to the ecosystem. \\
+\hline
+\textbf{Fee Rebates} & High-volume users receive discounts on transaction fees. & Compliant, as the benefit is directly linked to the user's activity level. \\
+\hline
+\end{tabular}
+\caption{ESB Reward System: MiCA Compliance}
+\label{tab:micacompliance}
+\end{table}
+
+By focusing on activity-based rewards, we ensure that ESB remains a compliant and attractive stablecoin for the European market, fostering a vibrant and engaged user base without violating MiCA's interest prohibition.
+
+\subsection{USB: The Decentralized International Stablecoin}
+USB is a decentralized, US Dollar-pegged stablecoin that is designed for the global DeFi market. It is backed by a sophisticated hedging mechanism that utilizes inverse perpetual swaps to maintain its peg to the US dollar.
+
+\subsubsection{Yield Generation}
+USB is a yield-bearing token that generates a competitive return for its holders. The yield is derived from the funding rates of the inverse perpetual swaps used in the hedging mechanism. This innovative approach allows USB to offer a stable and attractive yield, making it a compelling option for international users and DeFi protocols.
+
+\textit{In our 2024 backtesting, the hedging strategy for ETH/USD funding rates generated an annualized yield of 60\%. When combined with the BTC/USD hedging strategy—which alone produced a yield of 16\% throughout 2024—this innovative approach significantly enhances the overall stability and income-generating profile of USB. It is important to note that past performance is not indicative of future results, and these figures should not be considered a guarantee of future returns.}
+
+\section{Risk Management Framework}
+Stabolut has implemented a comprehensive risk management framework to ensure the stability and security of the entire ecosystem. Our multi-layered approach to risk mitigation addresses the unique challenges of our dual-stablecoin model.
+
+\subsection{Market Risk}
+\begin{itemize}
+    \item \textbf{ESB}: The ESB reserve is managed with a conservative asset allocation strategy. The crypto-asset portion of the reserve is over-collateralized and diversified across a basket of high-quality, liquid assets to mitigate price volatility.
+    \item \textbf{USB}: The USB hedging mechanism is continuously monitored and adjusted to maintain a delta-neutral position. The Stabolut Treasury acts as a backstop to absorb any potential losses from extreme market events.
+\end{itemize}
+
+\subsection{Counterparty Risk}
+\begin{itemize}
+    \item \textbf{ESB}: All reserve assets are held by a diversified group of regulated and insured custodians, minimizing the risk of a single point of failure.
+    \item \textbf{USB}: The hedging mechanism is distributed across a basket of reputable and liquid derivatives exchanges, reducing our exposure to any single counterparty.
+\end{itemize}
+
+\subsection{Regulatory Risk}
+Our dual-stablecoin model is designed to be adaptable to the evolving global regulatory landscape. ESB is structured to be fully compliant with MiCA, while USB is offered in jurisdictions where yield-bearing stablecoins are permitted. This allows us to operate in a compliant manner across multiple regulatory regimes.
+
+\subsection{Smart Contract Risk}
+All smart contracts are subject to a rigorous, multi-phase audit process, including:
+\begin{itemize}
+    \item \textbf{Internal Audits}: Our in-house security team conducts a comprehensive review of all code before it is deployed.
+    \item \textbf{Independent Audits}: We engage multiple, reputable third-party auditing firms to conduct independent reviews of our smart contracts.
+    \item \textbf{Bug Bounties}: We offer a generous bug bounty program to incentivize the responsible disclosure of any vulnerabilities.
+\end{itemize}
+
+This multi-layered approach to security ensures that the Stabolut protocol remains a safe and reliable platform for our users.
+
+\section{Transparency and Proof of Reserve}
+Stabolut is committed to the highest standards of transparency and accountability. We believe that a robust and verifiable proof of reserve is essential for building trust and ensuring the long-term stability of our ecosystem.
+
+\subsection{ESB: Audited Reserves}
+The ESB reserve is subject to regular, independent audits by a reputable, third-party accounting firm. These audits will verify the composition and value of the reserve assets, ensuring that the ESB stablecoin is always fully backed by a diversified portfolio of MiCA-compliant assets. The audit reports will be made publicly available on a quarterly basis.
+
+\subsection{USB: On-Chain Proof of Reserve}
+For the USB stablecoin, we provide a real-time, on-chain proof of reserve. This is achieved through a publicly accessible dashboard that displays the following information:
+\begin{itemize}
+    \item The total value of the assets held in the hedging mechanism.
+    \item The total number of USB tokens in circulation.
+    \item The current collateralization ratio, which is always maintained above 100\%.
+\end{itemize}
+
+This on-chain transparency provides a continuous and verifiable proof of reserve, allowing users to monitor the health and stability of the USB stablecoin at any time.
+
+

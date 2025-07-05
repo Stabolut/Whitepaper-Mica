@@ -1,0 +1,68 @@
+% Credits are indicated where needed. The general idea is based on a template by Vel (vel@LaTeXTemplates.com) and Frits Wenneker.
+
+\documentclass[11pt, a4paper]{article} % General settings in the beginning (defines the document class of your paper)
+% 11pt = is the font size
+% A4 is the paper size
+% “article” is your document class
+
+\input{general.tex} % Loads required packages from the separate file 
+
+%---------------------------------------------------------------------------------
+%	General information
+%---------------------------------------------------------------------------------
+\title{
+\begin{figure}[h] % Defines figure environment
+    \centering % Centers your figure
+\includegraphics[scale=0.1]{figure/usblogo.png} % Includes your figure and defines the size
+   % \caption{A circle} % For your caption
+   % \label{fig:my_label} % If you want to label your figure for in-text references
+\end{figure}
+} % Adds your title
+\author{
+%FIRSTNAME LASTNAME % Add your first and last name
+    %\thanks{} % Adds a footnote to your title
+     \textit{www.stabolut.com} % Adds your institution
+  }
+\date{Version 0.7.4, \today} % Adds the version and the current date to your “cover” page
+
+%---------------------------------------------------------------------------------
+%	Define what’s in your document
+%---------------------------------------------------------------------------------
+\begin{document}
+\maketitle % Print your title, author name and date;
+
+\begin{abstract}
+Stabolut is pioneering a dual-stablecoin strategy to address the diverse needs of the global digital economy. Our ecosystem features two distinct stablecoins: ESB, a Euro-pegged, MiCA-compliant Asset-Referenced Token (ART) for the European market, and USB, a US Dollar-pegged, decentralized stablecoin for international markets.
+
+The entire Stabolut ecosystem is governed by the SBL token. SBL holders have the power to vote on key parameters for both ESB and USB, including risk management, treasury allocation, and the implementation of new features. This ensures that the Stabolut protocol remains a community-driven and decentralized project.
+
+This whitepaper provides a comprehensive overview of the Stabolut ecosystem, detailing the architecture, mechanisms, and tokenomics of ESB, USB, and SBL.
+\end{abstract}
+
+\section*{Glossary}
+\begin{description}
+\item[ESB] Stabolut's MiCA-compliant, Euro-pegged stablecoin for the European market. It is an Asset-Referenced Token (ART) backed by a diversified portfolio of high-quality liquid assets and approved crypto-assets.
+
+\item[USB] Stabolut's decentralized, US Dollar-pegged stablecoin for the international DeFi market. It is a yield-bearing token backed by a sophisticated crypto-hedging mechanism.
+
+\item[SBL] Stabolut's utility and governance token. SBL holders can participate in governance decisions for both ESB and USB, and receive distributions from the Stabolut Treasury.
+
+\item[Stabolut Treasury] A diversified pool of assets funded by the revenue generated from both ESB and USB. The treasury is used to fund the SBL buyback and burn program, as well as other ecosystem initiatives.
+
+\item[Asset-Referenced Token (ART)] A type of stablecoin that is pegged to a basket of assets, including fiat currencies, commodities, and crypto-assets. ESB is an ART under MiCA regulations.
+
+\item[Inverse Perpetual Swap] A type of derivative contract that allows Stabolut to hedge against the price volatility of crypto assets. This is the primary backing mechanism for USB.
+
+\item[MiCA] The Markets in Crypto-Assets regulation, a comprehensive legal framework for crypto-assets in the European Union.
+\end{description}
+
+\input{content/toc} % Adds a table of content; 
+\input{content/introduction} % Adds your introduction
+\input{content/chapter2} % Adds your Chapter 2
+\input{content/chapter3} % Adds your Chapter 3 
+\input{content/chapter4} % Adds your Chapter 4
+\input{content/chapter5} % Adds your Chapter 5
+\input{content/chapter6} 
+\input{content/conclusion} % Adds your conclusion
+%--------------------------------------------------------------------------------
+\end{document}
