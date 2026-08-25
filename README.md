@@ -1,16 +1,55 @@
-# Stabolut Whitepaper
+# Stabolut MiCA Whitepaper (ESB Token)
 
-This repository contains the LaTeX source for the Stabolut whitepaper.
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](https://opensource.org/licenses/GPL-3.0)
 
-[View the PDF](Stabolut_WP_0.7.4.pdf)
+This repository contains the LaTeX source code and regulatory compliance documentation for the **Stabolut European MiCA-Compliant Stablecoin (ESB Token)**.
 
-## About Stabolut
+---
 
-Stabolut is a pioneering dual-stablecoin ecosystem designed to meet the diverse needs of the global digital economy. The project features two distinct stablecoins:
+## 📄 Read the Whitepaper
 
-*   **ESB:** A Euro-pegged, MiCA-compliant Asset-Referenced Token (ART) for the European market. It is backed by a diversified portfolio of high-quality liquid assets and approved crypto-assets.
-*   **USB:** A US Dollar-pegged, decentralized, and yield-bearing stablecoin for international markets, backed by a sophisticated crypto-hedging mechanism.
+- 📥 **[Download / View Compiled PDF (main.pdf)](./main.pdf)**
+- 📋 **[Read Stablecoin Regulation & Compliance Analysis (Markdown)](./StablecoinRegulation.md)**
 
-The entire ecosystem is governed by the **SBL token**, which empowers community members to vote on key parameters for both ESB and USB, including risk management, treasury allocation, and new features.
+---
 
-This whitepaper provides a comprehensive overview of the Stabolut ecosystem, detailing the architecture, mechanisms, and tokenomics of ESB, USB, and SBL.
+## 🏛️ About ESB & Stabolut
+
+Stabolut is a dual-stablecoin ecosystem designed to meet the diverse needs of the global digital economy:
+
+- **ESB**: A Euro-pegged, **MiCA-compliant Asset-Referenced Token (ART)** designed specifically for European regulatory frameworks, backed by high-quality liquid reserves.
+- **USB**: A US Dollar-pegged decentralized stablecoin for international markets, backed by crypto-hedging strategies.
+- **SBL Token**: Governance token allowing the community to vote on risk parameters, treasury allocations, and protocol upgrades.
+
+---
+
+## 🛠️ Compiling from Source
+
+To compile the LaTeX source into a PDF document:
+
+### Prerequisites
+Install a TeX distribution:
+- **macOS**: MacTeX (`brew install --cask mactex`)
+- **Ubuntu/Debian**: `sudo apt install texlive-full`
+- **Windows**: [MiKTeX](https://miktex.org/) or TeX Live
+
+### Compilation Command
+```bash
+pdflatex main.tex
+```
+
+---
+
+## 📂 Repository Structure
+
+- `main.tex`: Master LaTeX entrypoint.
+- `general.tex`: LaTeX packages, typography, and styling configurations.
+- `content/`: Individual chapters (Coverpage, Introduction, Chapters 2-6, Conclusion).
+- `figure/`: Diagrams, flowcharts, and branding assets.
+- `StablecoinRegulation.md`: Comprehensive regulatory reference document.
+
+---
+
+## 📄 License
+
+This work is licensed under the **GNU General Public License v3.0** - see [LICENSE](LICENSE) for details.
